@@ -14,12 +14,12 @@ let counter = 0
 setInterval(() => {
     
     ReactDOM.render(<Home 
-        digit1 = {((counter / 10) % 10)}
-        // digit2 = {Math.floor((counter / 10) % 10)}
-        // digit3 = {Math.floor((counter / 100) % 10)}
-        // digit4 = {Math.floor((counter / 1000) % 10)}
-        // digit5 = {Math.floor((counter / 10000) % 10)}
-        // digit6 = {Math.floor((counter / 100000) % 10)}
+        digit1 = {Math.floor((counter / 1) % 10)}
+        digit2 = {Math.floor((counter / 10) % 10)}
+        digit3 = {Math.floor((counter / 100) % 10)}
+        digit4 = {Math.floor((counter / 1000) % 10)}
+        digit5 = {Math.floor((counter / 10000) % 10)}
+        digit6 = {Math.floor((counter / 100000) % 10)}
     />, document.querySelector("#app"));
     counter = counter + 1 
 }, 1000)
